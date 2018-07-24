@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>myweb 加油</title>
+	<link rel="stylesheet" href="myweb.css">
+	<script src="myweb.js" type="text/javascript"></script>
+</head>
+<body>
+	<p id="top">Hello World!</p>
+	<a href="https://www.baidu.com/">百度</a>
+	<br>
+	<a href="https://www.alibaba.com/" target="_blank">阿里巴巴</a>
+	<br>
+	<img src="龙猫.jpg" alt="不好意思，图片不存在">
+	<br>
+	<a href="http://www.qq.com/">
+		<img src="腾讯.jpg" alt="不好意思，图片不存在">
+	</a>
+	<br>
+	<a href="#bottom">直达底部</a>
+	<table border="1" cellpadding="10">
+		<tr>
+			<th>项目名称</th>
+			<th colspan="2">学习周期</th>
+		</tr>
+		<tr>
+			<td>HTML</td>
+			<td>一天</td>
+			<td>一天</td>
+		</tr>
+		<tr>
+			<td>CSS</td>
+			<td>一周</td>
+		</tr>
+		<tr>
+			<td>javascript</td>
+			<td>一月</td>
+		</tr>
+		<tr>
+			<th rowspan="2">框架</th>
+			<td>vue</td>
+		</tr>
+		<tr>
+			<td>react</td>
+		</tr>	
+	</table>
+	<ul>
+		<li>apple</li>
+		<li>orange</li>
+	</ul>
+	<ol>
+		<li>面包</li>
+		<li>牛奶</li>
+		<ol>
+			<li>咖啡</li>
+			<li>奶茶</li>
+		</ol>
+	</ol>
+	<dl>
+		<dt>
+			动物类
+		</dt>
+		<dd>大象</dd>
+		<dd>河马</dd>
+		<dd>狮子</dd>
+		<dt>植物类</dt>
+		<dd>桐树</dd>
+		<dd>薰衣草</dd>
+		<dd>橡胶树</dd>
+	</dl>
+	<div>div是一个块状标签</div>
+	<span>span是一个行间标签</span>
+	<form action="http://www.pronhub.com/" autocomplete="on" oninput="x.value=parseInt(aoutput.value)"> 
+	<!-- autocomplete="on"属性可以自动填写 -->
+	<!-- novalidate属性可以不用验证form 或 input -->
+	<!-- oninput 元素用于不同类型的输出 -->
+		<fieldset>
+			<legend>请如实填写一下内容：</legend>
+			您的名字：<input type="text" autofocus placeholder="必须是你的真实名字哦"> <!-- autofocus属性自动对焦 -->
+			<br>
+			您的密码：<input type="password" required> <!-- required属性规定不能为空 -->
+			<br>
+			<p>请选择您的性别：</p>
+			<input type="radio" name="sex">男
+			<br>
+			<input type="radio" name="sex">女
+			<p>请选择您的爱好</p>
+			<input type="checkbox">吃<br>
+			<input type="checkbox">睡<br>
+			<input type="checkbox">玩<br>
+			<p>请选择你的国家</p>
+			<select>
+				<option>中国</option>
+				<option>美国</option>
+			</select>
+			<p>请选择您喜欢的颜色</p>
+			<input type="color" name="favcolor">
+			<p>请选择日期</p>
+			<input type="date" name="bday">
+			<p>请输入您的email</p>
+			<input type="email" name="email">
+			<p>请输入您是第几次访问这个网站</p>
+			<input type="number" min="1" max="10">
+			<p>请输入您对风险的承受力</p>0
+			<input type="range" value="10" id="aoutput">100
+			<br>
+			您的选择是：<output name="x" for="a"></output>
+			<p>请输入您的电话号码</p>
+			<input type="tel" name="usrtel">
+			<p>请输入时间</p>
+			<input type="time">
+			<p>请输入您的网站</p>
+			<input type="url">
+			<p>请输入您最常访问的网站</p>
+			<input list="ab">
+			<datalist id="ab">
+				<option value="google">
+				<option value="qq">
+				<option value="baidu">
+				<option value="github">
+				<option value="weixin">
+				<option value="alibaba">
+				<option value="taobao">
+				<option value="tianmao">
+				<option value="jingdong">
+			</datalist>
+			<p>请上传你的头像</p>
+			<input type="file"> <!-- multiple属性可以上传多个文件 -->
+			<p>请输入提示的内容</p>
+			<input type="text" pattern="[A-Za-z]{5}" title="welcome to USA" placeholder="这是一个正则表达式">
+			<p>请输入您的留言</p>
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+			<br>
+			<input type="submit" value="点击就是确定哦">
+			<br>
+			<input type="submit" formaction="http://www.tianmao.com/" value="点击就是去往天猫哦"> <!-- formaction属性重新指向action地址 -->
+			<br>
+			<input type="submit" value="不用验证也能提交哦" formnovalidate>
+			<br>
+			<input type="submit" value="在新窗口打开" formtarget="_blank">
+		</fieldset>
+	</form>
+	<p>加&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp油</p>
+	<p>1&lt2</p>
+	<p>2&gt1</p>
+	<p>&#169</p>
+	<h1>以下是H5内容</h1>
+	<hr>
+	<canvas>
+		<!-- 这里是一个js画图的地方 -->
+	</canvas>
+	<svg>
+		<!-- 这里是一个js画图的地方 -->
+	</svg>
+	<video controls>
+		<source src="哔哩哔哩.mp4" type="video/mp4">
+
+	</video>
+	<br>
+	<audio controls>
+		<source src="演员.mp3" type="audio/mp3">
+	</audio>
+	<br>
+	请设置数字间隔：<input type="number" name="points" step="5">
+	<br>
+	<div id="Web_Storage_Test">
+		<label for="webname">请输入您的网站名称：</label>
+		<input type="text" id="wname">
+		<br>
+		<label for="wwwname">请输入您的网址：</label>
+		<input type="text" id="wangzhi">
+		<br>
+		<input type="button" value="点击添加" onclick="savewww()">
+		<br>
+		<hr>
+		<label for="getwww">请输入您的网站名称：</label>
+		<input type="text" id="wwwshuru">
+		<br>
+		<input type="button" value="点击获取" onclick="find()">
+		<p id="wwwIsOk"></p>
+	</div>
+	<div id="wwwlist">
+	</div>
+	
+	<!-- Web SQL -->
+	<!-- 应用程序缓存 -->
+	<!-- Web Workers -->
+	<!-- 服务器发送事件(Server-Sent Events) -->
+	<!-- WebSocket -->
+	<object width="500" height="500" data="漫画.swf"></object>
+	<embed width="500" height="500" src="半透明图片.html">
+
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p>加油</p>
+	<p id="js_print1"></p>
+	<p id="js_re1"></p>
+	<p id="js_re2"></p>
+	<p id="js_re3"></p>
+	<p id="bottom">我是底部</p>
+	<hr>
+	<a href="#top">返回顶部</a>
+	<script src="myweb.js"></script>
+
+</body>
+</html>

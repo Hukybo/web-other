@@ -1,0 +1,17 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 微软雅黑;
+
+}
+
+#Web_Storage_Test {
+
+	border: 2px dashed #ccc;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	margin-top: 100px;
+	padding: 10px;
+	text-align: center;
+}

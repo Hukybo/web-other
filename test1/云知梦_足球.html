@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<style>
+		* {
+			font-family: 微软雅黑;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		#imgid {
+			width: 128px;
+			height: 128px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div id="imgid">
+		<img src="足球.jpg" alt="">
+	</div>
+	<script>
+		var h = document.documentElement.clientHeight;
+		var f = 128;
+		var diffH = h - f;
+		var a =document.getElementById('imgid')
+		var ys = 0;
+		var yv = 1;
+		setInterval(function(){
+			ys = ys + yv;
+			if (ys >= diffH) {
+				ys = diffH;
+				yv = -yv;
+			}
+			if (ys <= 0) {
+				yv = -yv;
+			}
+			a.style.top = ys + 'px';
+		},1)
+
+		var w = document.documentElement.clientWidth;
+		var diffW = w - f;
+		var xs = 0;
+		var xv = 1;
+		setInterval(function(){
+			xs = xs + xv;
+			if (xs >= diffW) {
+				xs = diffW;
+				xv = -xv;
+			}
+			if (xs <= 0) {
+				xv = -xv;
+			}
+			a.style.left = xs + 'px';
+		},1)
+	</script>
+</body>
+</html>
